@@ -10,7 +10,7 @@ const FilmContainer = () => {
     const [loaded, setLoaded] = useState(false); 
 
     const getFilm = () => {
-        console.log("getting that launch info bitch");
+        console.log("test");
         fetch(`https://rss.itunes.apple.com/api/v1/us/movies/top-movies/all/25/explicit.json${selectedFilmId}`)
         .then(res => res.json())
         .then(data => setFilm(data))
